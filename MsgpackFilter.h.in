@@ -1,0 +1,3 @@
+// the configured options and settings for Tutorial
+#define MsgpackFilter_VERSION_MAJOR @MsgpackFilter_VERSION_MAJOR@
+#define MsgpackFilter_VERSION_MINOR @MsgpackFilter_VERSION_MINOR@
