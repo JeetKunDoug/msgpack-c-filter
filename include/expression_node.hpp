@@ -8,7 +8,7 @@ struct ExpressionNode {
 public:
     virtual T evaluate() const = 0;
     virtual void clear() = 0;
-    virtual void set_value(std::string key, msgpack::object* val) = 0;
+    virtual void set_value(std::string key, void* val) = 0;
 };
 
 template<typename TResult, typename TOperands>
@@ -27,9 +27,9 @@ public:
         right->clear();
     }
     
-    virtual void set_value(std::string key, msgpack::object* val) {
-        left->set_value(key, val);
-        right->set_value(key, val);
+    virtual void set_value(std::string key, void* value) {
+        left->set_value(key, value);
+        right->set_value(key, value);
     }
 };
 
@@ -68,7 +68,7 @@ struct ConstantValue: public ExpressionNode<T> {
         // noop for constant
     }
     
-    inline virtual void set_value(std::string key, msgpack::object* val) {
+    inline virtual void set_value(std::string key, void* val) {
         // noop for constant
     }
 };
@@ -89,8 +89,10 @@ struct FieldValue: public ExpressionNode<T> {
         value = boost::none;
     }
     
-    inline virtual void set_value(std::string key, msgpack::object* val) {
-        value = val->as<T>();
+    inline virtual void set_value(std::string key, void* val) {
+        if (key == field) {
+            value = *reinterpret_cast<T*>(val);
+        }
     }
 };
 

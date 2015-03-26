@@ -1,6 +1,8 @@
 #include <set>
 #include "ast.hpp"
 #include "expression_node.hpp"
+#include "cmp.h"
+#include "cmp_mem_access.h"
 
 #ifndef msgpack_filter_extractor_hpp
 #define msgpack_filter_extractor_hpp
@@ -9,8 +11,8 @@ class missing_value : public std::bad_cast { };
 class Extractor {
     const Ast& ast;
     std::set<std::string> expr_fields;
-    msgpack::zone zone;
-    std::map<std::string, msgpack::object> data;
+    cmp_ctx_t cmp;
+    cmp_mem_access_t ma;
     
 public:
     std::set<std::string> extract_expr_fields(const Ast& ast) const{
@@ -23,19 +25,23 @@ public:
     }
 
     void extract(const std::string& data, ExpressionNode<bool>* root);
+    
 };
 
 void Extractor::extract(const std::string& data, ExpressionNode<bool>* root) {
-    zone.clear();
-    msgpack::object obj = msgpack::unpack(zone, data.data(), data.size());
-    // Stolen from https://github.com/msgpack/msgpack-c/blob/master/include/msgpack/object.hpp#L685
-    msgpack::object_kv *p(obj.via.map.ptr);
-    for (msgpack::object_kv* const pend(obj.via.map.ptr + obj.via.map.size); p < pend; ++p) {
-        std::string key = p->key.as<std::string>();
-        if (this->expr_fields.find(key) != this->expr_fields.end()){
-            // TODO: When we actually parse the AST for this, store which nodes in the expression tree actually care about each key
-            // Then, we can just push to the nodes that need the data rather than all nodes.
-            root->set_value(key, &(p->val));
+    uint32_t map_size;
+    char key[255];
+    double value;
+    cmp_mem_access_ro_init(&cmp, &ma, data.data(), data.size());
+    if (!cmp_read_map(&cmp, &map_size)) {
+        return; // TODO: Error Handling
+    }
+    for (int i=0;i<map_size;i++) {
+        uint32_t string_size = 255;
+        cmp_read_str(&cmp, key, &string_size);
+        cmp_read_double(&cmp, &value);
+        if (this->expr_fields.find(key) != this->expr_fields.end()) {
+            root->set_value(key, &value);
         }
     }
 }

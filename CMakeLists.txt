@@ -18,9 +18,9 @@ if(Boost_FOUND)
     include_directories(${Boost_INCLUDE_DIRS}) 
 endif()
 
-include_directories("${PROJECT_BINARY_DIR}" "${PROJECT_SOURCE_DIR}/msgpack-c/include")
+include_directories("${PROJECT_BINARY_DIR}" "${PROJECT_SOURCE_DIR}/msgpack-c/include" "${PROJECT_SOURCE_DIR}/include")
 
 set(CMAKE_LIBRARY_PATH ${CMAKE_LIBRARY_PATH} ./msgpack-c)
 
-add_executable(main main.cpp)
+add_executable(main cmp.c cmp_mem_access.c main.cpp )
 target_link_libraries(main ${Boost_LIBRARIES})

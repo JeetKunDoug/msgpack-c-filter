@@ -1,755 +1,703 @@
 // !$*UTF8*$!
 {
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
+       archiveVersion = 1;
+       classes = {
+       };
+       objectVersion = 46;
+       objects = {
 
 /* Begin PBXAggregateTarget section */
-		9B6FC4958B30461F933281FF /* ALL_BUILD */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = 2DDE7509C1BA4A08AE6C12D9 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
-			buildPhases = (
-				7FE2E56DD92F4F5B889FCC00 /* CMake Rules */,
-			);
-			dependencies = (
-				10A6FDBC753D4C09911E9CA2 /* PBXTargetDependency */,
-				8B83CE3EF3AA4A52BACD1570 /* PBXTargetDependency */,
-			);
-			name = ALL_BUILD;
-			productName = ALL_BUILD;
-		};
-		F16B35033DA343B197F83131 /* ZERO_CHECK */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = 9D61EBDA9E2B45579DE5D3B9 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
-			buildPhases = (
-				5D55AA31C0204A82A1F1374D /* CMake Rules */,
-			);
-			dependencies = (
-			);
-			name = ZERO_CHECK;
-			productName = ZERO_CHECK;
-		};
+              D6B6A3EFC8EA4FC9AAD3F040 /* ALL_BUILD */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = D405AF979FEE4951B903E83D /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+                     buildPhases = (
+                            C517BE90783D4E8C8797E9F3 /* CMake Rules */,
+                     );
+                     dependencies = (
+                            C1387DBEE7D8486682795605 /* PBXTargetDependency */,
+                            707E98BDA7FC4949A8A32454 /* PBXTargetDependency */,
+                     );
+                     name = ALL_BUILD;
+                     productName = ALL_BUILD;
+              };
+              CFBB5A0518A44E2AA9947BDC /* ZERO_CHECK */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = 3B763FA013CB4FB39BF8404A /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+                     buildPhases = (
+                            18B8A9D47C374F86AF9821D7 /* CMake Rules */,
+                     );
+                     dependencies = (
+                     );
+                     name = ZERO_CHECK;
+                     productName = ZERO_CHECK;
+              };
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		AA368E062E644707A624DA05 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5CA20CBEBBC4CC1B0553E86 /* main.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+40E0CD3B2C3B47ED8824B74A /* /Users/doug/basho/msgpack-filter/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = AA71569A98AD401F976B9DF6 /* /Users/doug/basho/msgpack-filter/CMakeLists.txt */; settings = { COMPILER_FLAGS = ""; }; };
+D6BF1386310A40BFA5EC57AA /* /Users/doug/basho/msgpack-filter/cmp.c */ = {isa = PBXBuildFile; fileRef = 9BAA69FDE3754D1389D4CEAE /* /Users/doug/basho/msgpack-filter/cmp.c */; settings = { COMPILER_FLAGS = ""; }; };
+E385E6D9A9784B289BF6E768 /* /Users/doug/basho/msgpack-filter/cmp_mem_access.c */ = {isa = PBXBuildFile; fileRef = 4F281DF8B4084AEC9759097C /* /Users/doug/basho/msgpack-filter/cmp_mem_access.c */; settings = { COMPILER_FLAGS = ""; }; };
+EC4E8BEA50AF47A483F63839 /* /Users/doug/basho/msgpack-filter/main.cpp */ = {isa = PBXBuildFile; fileRef = 99B5C8B0EC6F48AB855FAB49 /* /Users/doug/basho/msgpack-filter/main.cpp */; settings = { COMPILER_FLAGS = ""; }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXBuildStyle section */
+              A5D05A7ECF1142A197F19C32 /*  */ = {
+                     isa = PBXBuildStyle;
+              };
+              8B487A5C71F7492D8C18BA40 /* Debug */ = {
+                     isa = PBXBuildStyle;
+                     buildSettings = {
+                            COPY_PHASE_STRIP = NO;
+                     };
+                     name = Debug;
+              };
+              6E31A1020AC34B8B8810ED05 /* Release */ = {
+                     isa = PBXBuildStyle;
+                     buildSettings = {
+                            COPY_PHASE_STRIP = NO;
+                     };
+                     name = Release;
+              };
+              C8F138534A6948A8B8AAD337 /* MinSizeRel */ = {
+                     isa = PBXBuildStyle;
+                     buildSettings = {
+                            COPY_PHASE_STRIP = NO;
+                     };
+                     name = MinSizeRel;
+              };
+              68CF6F83047E436DA114B9DF /* RelWithDebInfo */ = {
+                     isa = PBXBuildStyle;
+                     buildSettings = {
+                            COPY_PHASE_STRIP = NO;
+                     };
+                     name = RelWithDebInfo;
+              };
+/* End PBXBuildStyle section */
+
 /* Begin PBXContainerItemProxy section */
-		819B2957A85548C6A264D2F3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A561AEAB6C044E998102CEFC /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4CD595D14FAA4951A00CCA12;
-			remoteInfo = main;
-		};
-		CF5B74D0E631406EA66C1631 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A561AEAB6C044E998102CEFC /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F16B35033DA343B197F83131;
-			remoteInfo = ZERO_CHECK;
-		};
-		F95048BF2D2C47B0A81E4A01 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A561AEAB6C044E998102CEFC /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F16B35033DA343B197F83131;
-			remoteInfo = ZERO_CHECK;
-		};
+              00E393850250480D948CF2C6 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = C2FE9CF7CABB4F71973B285A /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = CFBB5A0518A44E2AA9947BDC;
+                     remoteInfo = ZERO_CHECK;
+              };
+              442751AB98514611BB4FBF04 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = C2FE9CF7CABB4F71973B285A /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = CFBB5A0518A44E2AA9947BDC;
+                     remoteInfo = ZERO_CHECK;
+              };
+              165CEF1569C74105B630E243 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = C2FE9CF7CABB4F71973B285A /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = D7214614CAA542C59016F2AD;
+                     remoteInfo = main;
+              };
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1698670658294033830A3C1E /* main */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = main; sourceTree = BUILT_PRODUCTS_DIR; };
-		6D6AEAD0CBA94D3BA16BBFD9 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		9162F9421AC2F1FF00456873 /* expression_node.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = expression_node.hpp; sourceTree = "<group>"; };
-		91F472B01AC04EB900D6FF13 /* expression.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = expression.hpp; sourceTree = "<group>"; };
-		91F472B21AC0543000D6FF13 /* extractor.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = extractor.hpp; sourceTree = "<group>"; };
-		91F472B31AC059A100D6FF13 /* ast.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ast.hpp; sourceTree = "<group>"; };
-		B5CA20CBEBBC4CC1B0553E86 /* main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; path = main.cpp; sourceTree = SOURCE_ROOT; };
-		E5FD22A27D634F55A7C0ADBB /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		FF7B71D218434471ABBB0CF5 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+AA71569A98AD401F976B9DF6 /* /Users/doug/basho/msgpack-filter/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = "sourcecode.text"; fileEncoding = 4; name = "CMakeLists.txt"; path = "CMakeLists.txt"; sourceTree = SOURCE_ROOT; };
+9BAA69FDE3754D1389D4CEAE /* /Users/doug/basho/msgpack-filter/cmp.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "cmp.c"; path = "cmp.c"; sourceTree = SOURCE_ROOT; };
+4F281DF8B4084AEC9759097C /* /Users/doug/basho/msgpack-filter/cmp_mem_access.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "cmp_mem_access.c"; path = "cmp_mem_access.c"; sourceTree = SOURCE_ROOT; };
+99B5C8B0EC6F48AB855FAB49 /* /Users/doug/basho/msgpack-filter/main.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "main.cpp"; path = "main.cpp"; sourceTree = SOURCE_ROOT; };
+BA09540952C541648D6BAFAF /* main */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = main; refType = 0; sourceTree = BUILT_PRODUCTS_DIR; };
+C6D7A8F8CB704D64A25F21C7 /* /Users/doug/basho/msgpack-filter/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = "sourcecode.text"; fileEncoding = 4; name = "CMakeLists.txt"; path = "CMakeLists.txt"; sourceTree = SOURCE_ROOT; };
+1C3BEE3B3C0E483AB1A48AC4 /* /Users/doug/basho/msgpack-filter/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = "sourcecode.text"; fileEncoding = 4; name = "CMakeLists.txt"; path = "CMakeLists.txt"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
-		0AD897D39AB14DAA8DEF419C /* main */ = {
-			isa = PBXGroup;
-			children = (
-				849C8A8E3697493D9565AD6A /* Source Files */,
-				FF7B71D218434471ABBB0CF5 /* CMakeLists.txt */,
-			);
-			name = main;
-			sourceTree = "<group>";
-		};
-		3D8069EA3ADB474587AE2883 /* ALL_BUILD */ = {
-			isa = PBXGroup;
-			children = (
-				690DD36D3C1343479FADA4D0 /* CMake Rules */,
-				6D6AEAD0CBA94D3BA16BBFD9 /* CMakeLists.txt */,
-			);
-			name = ALL_BUILD;
-			sourceTree = "<group>";
-		};
-		3D8D8E0C27CD422F94294D7B /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				1698670658294033830A3C1E /* main */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		690DD36D3C1343479FADA4D0 /* CMake Rules */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "CMake Rules";
-			sourceTree = "<group>";
-		};
-		7CD11EEDDE18432399AE0327 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		849C8A8E3697493D9565AD6A /* Source Files */ = {
-			isa = PBXGroup;
-			children = (
-				91F472AE1AC04E0200D6FF13 /* include */,
-				B5CA20CBEBBC4CC1B0553E86 /* main.cpp */,
-			);
-			name = "Source Files";
-			sourceTree = "<group>";
-		};
-		859C372B77F74E398D6E4F3F = {
-			isa = PBXGroup;
-			children = (
-				FBFB4EF393AF494282A3C9DD /* Sources */,
-				7CD11EEDDE18432399AE0327 /* Resources */,
-				3D8D8E0C27CD422F94294D7B /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		91F472AE1AC04E0200D6FF13 /* include */ = {
-			isa = PBXGroup;
-			children = (
-				9162F9421AC2F1FF00456873 /* expression_node.hpp */,
-				91F472B01AC04EB900D6FF13 /* expression.hpp */,
-				91F472B21AC0543000D6FF13 /* extractor.hpp */,
-				91F472B31AC059A100D6FF13 /* ast.hpp */,
-			);
-			path = include;
-			sourceTree = "<group>";
-		};
-		F2863BFF32BB485BA0D8BCEF /* ZERO_CHECK */ = {
-			isa = PBXGroup;
-			children = (
-				F9D6146CFFA647EFB668AD16 /* CMake Rules */,
-				E5FD22A27D634F55A7C0ADBB /* CMakeLists.txt */,
-			);
-			name = ZERO_CHECK;
-			sourceTree = "<group>";
-		};
-		F9D6146CFFA647EFB668AD16 /* CMake Rules */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "CMake Rules";
-			sourceTree = "<group>";
-		};
-		FBFB4EF393AF494282A3C9DD /* Sources */ = {
-			isa = PBXGroup;
-			children = (
-				0AD897D39AB14DAA8DEF419C /* main */,
-				3D8069EA3ADB474587AE2883 /* ALL_BUILD */,
-				F2863BFF32BB485BA0D8BCEF /* ZERO_CHECK */,
-			);
-			name = Sources;
-			sourceTree = "<group>";
-		};
+              69318E6D152C466796197381  = {
+                     isa = PBXGroup;
+                     children = (
+                            59AFEC1BD48541989065E6C3 /* Sources */,
+                            347C752A8FAF4B7394EE4661 /* Resources */,
+                            2FABF5101D4944BD8848E4C5 /* Products */,
+                     );
+                     sourceTree = "<group>";
+              };
+              59AFEC1BD48541989065E6C3 /* Sources */ = {
+                     isa = PBXGroup;
+                     children = (
+                            969B9AFD95BA4A1480D0950C /* main */,
+                            A17E5C4EE44F4DD7A419382C /* ALL_BUILD */,
+                            A74D4DB52F704F9BB65EA6D3 /* ZERO_CHECK */,
+                     );
+                     name = Sources;
+                     sourceTree = "<group>";
+              };
+              347C752A8FAF4B7394EE4661 /* Resources */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = Resources;
+                     sourceTree = "<group>";
+              };
+              969B9AFD95BA4A1480D0950C /* main */ = {
+                     isa = PBXGroup;
+                     children = (
+                            E55E9F4D136D4A1A87521EBB /* Source Files */,
+                            AA71569A98AD401F976B9DF6 /* /Users/doug/basho/msgpack-filter/CMakeLists.txt */,
+                     );
+                     name = main;
+                     sourceTree = "<group>";
+              };
+              E55E9F4D136D4A1A87521EBB /* Source Files */ = {
+                     isa = PBXGroup;
+                     children = (
+                            9BAA69FDE3754D1389D4CEAE /* /Users/doug/basho/msgpack-filter/cmp.c */,
+                            4F281DF8B4084AEC9759097C /* /Users/doug/basho/msgpack-filter/cmp_mem_access.c */,
+                            99B5C8B0EC6F48AB855FAB49 /* /Users/doug/basho/msgpack-filter/main.cpp */,
+                     );
+                     name = "Source Files";
+                     sourceTree = "<group>";
+              };
+              A17E5C4EE44F4DD7A419382C /* ALL_BUILD */ = {
+                     isa = PBXGroup;
+                     children = (
+                            41E2399256654F38A65690C6 /* CMake Rules */,
+                            C6D7A8F8CB704D64A25F21C7 /* /Users/doug/basho/msgpack-filter/CMakeLists.txt */,
+                     );
+                     name = ALL_BUILD;
+                     sourceTree = "<group>";
+              };
+              41E2399256654F38A65690C6 /* CMake Rules */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = "CMake Rules";
+                     sourceTree = "<group>";
+              };
+              A74D4DB52F704F9BB65EA6D3 /* ZERO_CHECK */ = {
+                     isa = PBXGroup;
+                     children = (
+                            45D74293A93F4313A2E26E85 /* CMake Rules */,
+                            1C3BEE3B3C0E483AB1A48AC4 /* /Users/doug/basho/msgpack-filter/CMakeLists.txt */,
+                     );
+                     name = ZERO_CHECK;
+                     sourceTree = "<group>";
+              };
+              45D74293A93F4313A2E26E85 /* CMake Rules */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = "CMake Rules";
+                     sourceTree = "<group>";
+              };
+              2FABF5101D4944BD8848E4C5 /* Products */ = {
+                     isa = PBXGroup;
+                     children = (
+                            BA09540952C541648D6BAFAF /* main */,
+                     );
+                     name = Products;
+                     sourceTree = "<group>";
+              };
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4CD595D14FAA4951A00CCA12 /* main */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5625455DED764EBBB0B73FA2 /* Build configuration list for PBXNativeTarget "main" */;
-			buildPhases = (
-				3284D6CDE4F24FD9839F53DB /* Sources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				3DAC7C43DCB746EE80B5C0BF /* PBXTargetDependency */,
-			);
-			name = main;
-			productName = main;
-			productReference = 1698670658294033830A3C1E /* main */;
-			productType = "com.apple.product-type.tool";
-		};
+              D7214614CAA542C59016F2AD /* main */ = {
+                     isa = PBXNativeTarget;
+                     buildConfigurationList = 4B333B43723D4FC29B6A5FE8 /* Build configuration list for PBXNativeTarget "main" */;
+                     buildPhases = (
+                            BB363BF609F5445285D2AA4A /* Sources */,
+                     );
+                     buildRules = (
+                     );
+                     dependencies = (
+                            80EAB6087475420A99C6D873 /* PBXTargetDependency */,
+                     );
+                     name = main;
+                     productName = main;
+                     productReference = BA09540952C541648D6BAFAF /* main */;
+                     productType = "com.apple.product-type.tool";
+              };
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		A561AEAB6C044E998102CEFC /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				BuildIndependentTargetsInParallel = YES;
-				LastUpgradeCheck = 0620;
-			};
-			buildConfigurationList = D4C28DD9A8DF40FC98EAC08C /* Build configuration list for PBXProject "msgpack-filter" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-			);
-			mainGroup = 859C372B77F74E398D6E4F3F;
-			projectDirPath = ..;
-			projectRoot = "";
-			targets = (
-				4CD595D14FAA4951A00CCA12 /* main */,
-				9B6FC4958B30461F933281FF /* ALL_BUILD */,
-				F16B35033DA343B197F83131 /* ZERO_CHECK */,
-			);
-		};
+              C2FE9CF7CABB4F71973B285A /* Project object */ = {
+                     isa = PBXProject;
+                     attributes = {
+                            BuildIndependentTargetsInParallel = YES;
+                     };
+                     buildConfigurationList = A34030991AD64977A24A48CC /* Build configuration list for PBXProject  "msgpack-filter" */;
+                     buildSettings = {
+                     };
+                     buildStyles = (
+                            8B487A5C71F7492D8C18BA40 /* Debug */,
+                            6E31A1020AC34B8B8810ED05 /* Release */,
+                            C8F138534A6948A8B8AAD337 /* MinSizeRel */,
+                            68CF6F83047E436DA114B9DF /* RelWithDebInfo */,
+                     );
+                     compatibilityVersion = "Xcode 3.2";
+                     hasScannedForEncodings = 0;
+                     mainGroup = 69318E6D152C466796197381;
+                     projectDirPath = "..";
+                     projectRoot = "";
+                     targets = (
+                            D7214614CAA542C59016F2AD /* main */,
+                            D6B6A3EFC8EA4FC9AAD3F040 /* ALL_BUILD */,
+                            CFBB5A0518A44E2AA9947BDC /* ZERO_CHECK */,
+                     );
+              };
 /* End PBXProject section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		5D55AA31C0204A82A1F1374D /* CMake Rules */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			name = "CMake Rules";
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "make -C /Users/doug/basho/msgpack/xcode -f /Users/doug/basho/msgpack/xcode/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
-			showEnvVarsInLog = 0;
-		};
-		7FE2E56DD92F4F5B889FCC00 /* CMake Rules */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			name = "CMake Rules";
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "make -C /Users/doug/basho/msgpack/xcode -f /Users/doug/basho/msgpack/xcode/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
-			showEnvVarsInLog = 0;
-		};
+              D0140C1F61634E3A96040EFD /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              C517BE90783D4E8C8797E9F3 /* CMake Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/doug/basho/msgpack-filter/xcode -f /Users/doug/basho/msgpack-filter/xcode/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+              9A28E5E7A2B64816908868AB /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              18B8A9D47C374F86AF9821D7 /* CMake Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/doug/basho/msgpack-filter/xcode -f /Users/doug/basho/msgpack-filter/xcode/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		3284D6CDE4F24FD9839F53DB /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AA368E062E644707A624DA05 /* main.cpp in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
+              BB363BF609F5445285D2AA4A /* Sources */ = {
+                     isa = PBXSourcesBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                            D6BF1386310A40BFA5EC57AA /* /Users/doug/basho/msgpack-filter/cmp.c */,
+                            E385E6D9A9784B289BF6E768 /* /Users/doug/basho/msgpack-filter/cmp_mem_access.c */,
+                            EC4E8BEA50AF47A483F63839 /* /Users/doug/basho/msgpack-filter/main.cpp */,
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+              };
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		10A6FDBC753D4C09911E9CA2 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4CD595D14FAA4951A00CCA12 /* main */;
-			targetProxy = 819B2957A85548C6A264D2F3 /* PBXContainerItemProxy */;
-		};
-		3DAC7C43DCB746EE80B5C0BF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F16B35033DA343B197F83131 /* ZERO_CHECK */;
-			targetProxy = CF5B74D0E631406EA66C1631 /* PBXContainerItemProxy */;
-		};
-		8B83CE3EF3AA4A52BACD1570 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F16B35033DA343B197F83131 /* ZERO_CHECK */;
-			targetProxy = F95048BF2D2C47B0A81E4A01 /* PBXContainerItemProxy */;
-		};
+              80EAB6087475420A99C6D873 /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = CFBB5A0518A44E2AA9947BDC /* ZERO_CHECK */;
+                     targetProxy = 00E393850250480D948CF2C6 /* PBXContainerItemProxy */;
+              };
+              C1387DBEE7D8486682795605 /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = CFBB5A0518A44E2AA9947BDC /* ZERO_CHECK */;
+                     targetProxy = 442751AB98514611BB4FBF04 /* PBXContainerItemProxy */;
+              };
+              707E98BDA7FC4949A8A32454 /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = D7214614CAA542C59016F2AD /* main */;
+                     targetProxy = 165CEF1569C74105B630E243 /* PBXContainerItemProxy */;
+              };
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0717151D1C4145238E1732D1 /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (
-					/usr/local/include,
-					/Users/doug/basho/msgpack/xcode,
-					"/Users/doug/basho/msgpack/msgpack-c/include",
-				);
-				INSTALL_PATH = "";
-				OTHER_CFLAGS = "  ";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ZERO_CHECK;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/doug/basho/msgpack/xcode;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = (
-					"-Wmost",
-					"-Wno-four-char-constants",
-					"-Wno-unknown-pragmas",
-				);
-			};
-			name = MinSizeRel;
-		};
-		0C94B92E2AE94B02B31A5950 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				EXECUTABLE_PREFIX = "";
-				EXECUTABLE_SUFFIX = "";
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (
-					/usr/local/include,
-					/Users/doug/basho/msgpack/xcode,
-					"/Users/doug/basho/msgpack/msgpack-c/include",
-				);
-				INSTALL_PATH = "";
-				LIBRARY_SEARCH_PATHS = "";
-				OTHER_CFLAGS = "    ";
-				OTHER_CPLUSPLUSFLAGS = "    ";
-				OTHER_LDFLAGS = (
-					"-Wl,-search_paths_first",
-					"-Wl,-headerpad_max_install_names",
-					"/usr/local/lib/libboost_timer-mt.dylib",
-					"/usr/local/lib/libboost_system-mt.dylib",
-				);
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = main;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/doug/basho/msgpack/xcode;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = (
-					"-Wmost",
-					"-Wno-four-char-constants",
-					"-Wno-unknown-pragmas",
-				);
-			};
-			name = Debug;
-		};
-		1E0669DB9CAC41B08CF14B57 /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = macosx10.10;
-				SYMROOT = /Users/doug/basho/msgpack/xcode/build;
-			};
-			name = RelWithDebInfo;
-		};
-		3401222653254C9385FB7166 /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				EXECUTABLE_PREFIX = "";
-				EXECUTABLE_SUFFIX = "";
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 2;
-				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (
-					/usr/local/include,
-					/Users/doug/basho/msgpack/xcode,
-					"/Users/doug/basho/msgpack/msgpack-c/include",
-				);
-				INSTALL_PATH = "";
-				LIBRARY_SEARCH_PATHS = "";
-				OTHER_CFLAGS = "       -DNDEBUG  ";
-				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG  ";
-				OTHER_LDFLAGS = (
-					"-Wl,-search_paths_first",
-					"-Wl,-headerpad_max_install_names",
-					"/usr/local/lib/libboost_timer-mt.dylib",
-					"/usr/local/lib/libboost_system-mt.dylib",
-				);
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = main;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/doug/basho/msgpack/xcode;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = (
-					"-Wmost",
-					"-Wno-four-char-constants",
-					"-Wno-unknown-pragmas",
-				);
-			};
-			name = RelWithDebInfo;
-		};
-		3EC3435333014B22A899BF62 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = macosx10.10;
-				SYMROOT = /Users/doug/basho/msgpack/xcode/build;
-			};
-			name = Debug;
-		};
-		4499966D0C4346F99EAE882F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = macosx10.10;
-				SYMROOT = /Users/doug/basho/msgpack/xcode/build;
-			};
-			name = Release;
-		};
-		46286C4F6E0241E39559F5B8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				EXECUTABLE_PREFIX = "";
-				EXECUTABLE_SUFFIX = "";
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 3;
-				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (
-					/usr/local/include,
-					/Users/doug/basho/msgpack/xcode,
-					"/Users/doug/basho/msgpack/msgpack-c/include",
-				);
-				INSTALL_PATH = "";
-				LIBRARY_SEARCH_PATHS = "";
-				OTHER_CFLAGS = "    -DNDEBUG  ";
-				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG  ";
-				OTHER_LDFLAGS = (
-					"-Wl,-search_paths_first",
-					"-Wl,-headerpad_max_install_names",
-					"/usr/local/lib/libboost_timer-mt.dylib",
-					"/usr/local/lib/libboost_system-mt.dylib",
-				);
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = main;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/doug/basho/msgpack/xcode;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = (
-					"-Wmost",
-					"-Wno-four-char-constants",
-					"-Wno-unknown-pragmas",
-				);
-			};
-			name = Release;
-		};
-		56503D2EDE6141239582BFC9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (
-					/usr/local/include,
-					/Users/doug/basho/msgpack/xcode,
-					"/Users/doug/basho/msgpack/msgpack-c/include",
-				);
-				INSTALL_PATH = "";
-				OTHER_CFLAGS = "  ";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ALL_BUILD;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/doug/basho/msgpack/xcode;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = (
-					"-Wmost",
-					"-Wno-four-char-constants",
-					"-Wno-unknown-pragmas",
-				);
-			};
-			name = Release;
-		};
-		6A3266B17CF14EAAAA2DBC55 /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = macosx10.10;
-				SYMROOT = /Users/doug/basho/msgpack/xcode/build;
-			};
-			name = MinSizeRel;
-		};
-		7F9A292BE5164D4CB91759B0 /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				EXECUTABLE_PREFIX = "";
-				EXECUTABLE_SUFFIX = "";
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = s;
-				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (
-					/usr/local/include,
-					/Users/doug/basho/msgpack/xcode,
-					"/Users/doug/basho/msgpack/msgpack-c/include",
-				);
-				INSTALL_PATH = "";
-				LIBRARY_SEARCH_PATHS = "";
-				OTHER_CFLAGS = "    -DNDEBUG  ";
-				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG  ";
-				OTHER_LDFLAGS = (
-					"-Wl,-search_paths_first",
-					"-Wl,-headerpad_max_install_names",
-					"/usr/local/lib/libboost_timer-mt.dylib",
-					"/usr/local/lib/libboost_system-mt.dylib",
-				);
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = main;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/doug/basho/msgpack/xcode;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = (
-					"-Wmost",
-					"-Wno-four-char-constants",
-					"-Wno-unknown-pragmas",
-				);
-			};
-			name = MinSizeRel;
-		};
-		9266A9E506BE4E89A0BC435E /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (
-					/usr/local/include,
-					/Users/doug/basho/msgpack/xcode,
-					"/Users/doug/basho/msgpack/msgpack-c/include",
-				);
-				INSTALL_PATH = "";
-				OTHER_CFLAGS = "  ";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ALL_BUILD;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/doug/basho/msgpack/xcode;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = (
-					"-Wmost",
-					"-Wno-four-char-constants",
-					"-Wno-unknown-pragmas",
-				);
-			};
-			name = RelWithDebInfo;
-		};
-		A631CA438A8B4C1CA00DFB4D /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (
-					/usr/local/include,
-					/Users/doug/basho/msgpack/xcode,
-					"/Users/doug/basho/msgpack/msgpack-c/include",
-				);
-				INSTALL_PATH = "";
-				OTHER_CFLAGS = "  ";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ZERO_CHECK;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/doug/basho/msgpack/xcode;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = (
-					"-Wmost",
-					"-Wno-four-char-constants",
-					"-Wno-unknown-pragmas",
-				);
-			};
-			name = RelWithDebInfo;
-		};
-		AD0E8F55F3E442E18CE40FBA /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (
-					/usr/local/include,
-					/Users/doug/basho/msgpack/xcode,
-					"/Users/doug/basho/msgpack/msgpack-c/include",
-				);
-				INSTALL_PATH = "";
-				OTHER_CFLAGS = "  ";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ZERO_CHECK;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/doug/basho/msgpack/xcode;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = (
-					"-Wmost",
-					"-Wno-four-char-constants",
-					"-Wno-unknown-pragmas",
-				);
-			};
-			name = Release;
-		};
-		B08BA74560E34726AC0932C4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (
-					/usr/local/include,
-					/Users/doug/basho/msgpack/xcode,
-					"/Users/doug/basho/msgpack/msgpack-c/include",
-				);
-				INSTALL_PATH = "";
-				OTHER_CFLAGS = "  ";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ZERO_CHECK;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/doug/basho/msgpack/xcode;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = (
-					"-Wmost",
-					"-Wno-four-char-constants",
-					"-Wno-unknown-pragmas",
-				);
-			};
-			name = Debug;
-		};
-		BE883E27018E420DAEE1BB3D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (
-					/usr/local/include,
-					/Users/doug/basho/msgpack/xcode,
-					"/Users/doug/basho/msgpack/msgpack-c/include",
-				);
-				INSTALL_PATH = "";
-				OTHER_CFLAGS = "  ";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ALL_BUILD;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/doug/basho/msgpack/xcode;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = (
-					"-Wmost",
-					"-Wno-four-char-constants",
-					"-Wno-unknown-pragmas",
-				);
-			};
-			name = Debug;
-		};
-		E105979C5F254DDB8964E7A6 /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (
-					/usr/local/include,
-					/Users/doug/basho/msgpack/xcode,
-					"/Users/doug/basho/msgpack/msgpack-c/include",
-				);
-				INSTALL_PATH = "";
-				OTHER_CFLAGS = "  ";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ALL_BUILD;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/doug/basho/msgpack/xcode;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = (
-					"-Wmost",
-					"-Wno-four-char-constants",
-					"-Wno-unknown-pragmas",
-				);
-			};
-			name = MinSizeRel;
-		};
+              1C6E0CB216F14DE5A37CEE02 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+                            ONLY_ACTIVE_ARCH = YES;
+                            SDKROOT = "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk";
+                            SYMROOT = "/Users/doug/basho/msgpack-filter/xcode/build";
+                     };
+                     name = Debug;
+              };
+              1F3BF01592B2456DB4B208B4 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+                            ONLY_ACTIVE_ARCH = YES;
+                            SDKROOT = "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk";
+                            SYMROOT = "/Users/doug/basho/msgpack-filter/xcode/build";
+                     };
+                     name = Release;
+              };
+              4FE24B1D159A4A448DA20187 /* MinSizeRel */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+                            ONLY_ACTIVE_ARCH = YES;
+                            SDKROOT = "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk";
+                            SYMROOT = "/Users/doug/basho/msgpack-filter/xcode/build";
+                     };
+                     name = MinSizeRel;
+              };
+              27E02CB4283F436C87B4C7FB /* RelWithDebInfo */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+                            ONLY_ACTIVE_ARCH = YES;
+                            SDKROOT = "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk";
+                            SYMROOT = "/Users/doug/basho/msgpack-filter/xcode/build";
+                     };
+                     name = RelWithDebInfo;
+              };
+              376D3B45E44E4D0B98C2636A /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            EXECUTABLE_PREFIX = "";
+                            EXECUTABLE_SUFFIX = "";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/usr/local/include, "/Users/doug/basho/msgpack-filter/xcode", "/Users/doug/basho/msgpack-filter/msgpack-c/include", "/Users/doug/basho/msgpack-filter/include", );
+                            INSTALL_PATH = "";
+                            LIBRARY_SEARCH_PATHS = "";
+                            OTHER_CFLAGS = "    ";
+                            OTHER_CPLUSPLUSFLAGS = "    ";
+                            OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /usr/local/lib/libboost_timer-mt.dylib /usr/local/lib/libboost_system-mt.dylib";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = main;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/doug/basho/msgpack-filter/xcode";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              DB35803481A4413A8B1E6727 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            EXECUTABLE_PREFIX = "";
+                            EXECUTABLE_SUFFIX = "";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 3;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/usr/local/include, "/Users/doug/basho/msgpack-filter/xcode", "/Users/doug/basho/msgpack-filter/msgpack-c/include", "/Users/doug/basho/msgpack-filter/include", );
+                            INSTALL_PATH = "";
+                            LIBRARY_SEARCH_PATHS = "";
+                            OTHER_CFLAGS = "    -DNDEBUG  ";
+                            OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG  ";
+                            OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /usr/local/lib/libboost_timer-mt.dylib /usr/local/lib/libboost_system-mt.dylib";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = main;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/doug/basho/msgpack-filter/xcode";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              0BFFE2FF5130487AAB5880D1 /* MinSizeRel */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            EXECUTABLE_PREFIX = "";
+                            EXECUTABLE_SUFFIX = "";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = s;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/usr/local/include, "/Users/doug/basho/msgpack-filter/xcode", "/Users/doug/basho/msgpack-filter/msgpack-c/include", "/Users/doug/basho/msgpack-filter/include", );
+                            INSTALL_PATH = "";
+                            LIBRARY_SEARCH_PATHS = "";
+                            OTHER_CFLAGS = "    -DNDEBUG  ";
+                            OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG  ";
+                            OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /usr/local/lib/libboost_timer-mt.dylib /usr/local/lib/libboost_system-mt.dylib";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = main;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/doug/basho/msgpack-filter/xcode";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = MinSizeRel;
+              };
+              FBF7AB3342C94626B65ADC71 /* RelWithDebInfo */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            EXECUTABLE_PREFIX = "";
+                            EXECUTABLE_SUFFIX = "";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 2;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/usr/local/include, "/Users/doug/basho/msgpack-filter/xcode", "/Users/doug/basho/msgpack-filter/msgpack-c/include", "/Users/doug/basho/msgpack-filter/include", );
+                            INSTALL_PATH = "";
+                            LIBRARY_SEARCH_PATHS = "";
+                            OTHER_CFLAGS = "       -DNDEBUG  ";
+                            OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG  ";
+                            OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /usr/local/lib/libboost_timer-mt.dylib /usr/local/lib/libboost_system-mt.dylib";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = main;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/doug/basho/msgpack-filter/xcode";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = RelWithDebInfo;
+              };
+              F54BF4DACF5B4625ADF9E66B /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/usr/local/include, "/Users/doug/basho/msgpack-filter/xcode", "/Users/doug/basho/msgpack-filter/msgpack-c/include", "/Users/doug/basho/msgpack-filter/include", );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ALL_BUILD;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/doug/basho/msgpack-filter/xcode";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              9F97E6FFBC054AE9B6C5F334 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/usr/local/include, "/Users/doug/basho/msgpack-filter/xcode", "/Users/doug/basho/msgpack-filter/msgpack-c/include", "/Users/doug/basho/msgpack-filter/include", );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ALL_BUILD;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/doug/basho/msgpack-filter/xcode";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              0A96B81AD7774B9D8A893E5F /* MinSizeRel */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/usr/local/include, "/Users/doug/basho/msgpack-filter/xcode", "/Users/doug/basho/msgpack-filter/msgpack-c/include", "/Users/doug/basho/msgpack-filter/include", );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ALL_BUILD;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/doug/basho/msgpack-filter/xcode";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = MinSizeRel;
+              };
+              EF96250D66514490B9DAADA0 /* RelWithDebInfo */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/usr/local/include, "/Users/doug/basho/msgpack-filter/xcode", "/Users/doug/basho/msgpack-filter/msgpack-c/include", "/Users/doug/basho/msgpack-filter/include", );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ALL_BUILD;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/doug/basho/msgpack-filter/xcode";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = RelWithDebInfo;
+              };
+              88D7AE596BA449C3B7C685C7 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/usr/local/include, "/Users/doug/basho/msgpack-filter/xcode", "/Users/doug/basho/msgpack-filter/msgpack-c/include", "/Users/doug/basho/msgpack-filter/include", );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ZERO_CHECK;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/doug/basho/msgpack-filter/xcode";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              56F4C1220F2046AA8BFD4355 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/usr/local/include, "/Users/doug/basho/msgpack-filter/xcode", "/Users/doug/basho/msgpack-filter/msgpack-c/include", "/Users/doug/basho/msgpack-filter/include", );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ZERO_CHECK;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/doug/basho/msgpack-filter/xcode";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              9385D63A77A14A829E100F48 /* MinSizeRel */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/usr/local/include, "/Users/doug/basho/msgpack-filter/xcode", "/Users/doug/basho/msgpack-filter/msgpack-c/include", "/Users/doug/basho/msgpack-filter/include", );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ZERO_CHECK;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/doug/basho/msgpack-filter/xcode";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = MinSizeRel;
+              };
+              CC0EFB69555E4B44BD89377A /* RelWithDebInfo */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/usr/local/include, "/Users/doug/basho/msgpack-filter/xcode", "/Users/doug/basho/msgpack-filter/msgpack-c/include", "/Users/doug/basho/msgpack-filter/include", );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ZERO_CHECK;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/doug/basho/msgpack-filter/xcode";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = RelWithDebInfo;
+              };
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2DDE7509C1BA4A08AE6C12D9 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				BE883E27018E420DAEE1BB3D /* Debug */,
-				56503D2EDE6141239582BFC9 /* Release */,
-				E105979C5F254DDB8964E7A6 /* MinSizeRel */,
-				9266A9E506BE4E89A0BC435E /* RelWithDebInfo */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
-		};
-		5625455DED764EBBB0B73FA2 /* Build configuration list for PBXNativeTarget "main" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0C94B92E2AE94B02B31A5950 /* Debug */,
-				46286C4F6E0241E39559F5B8 /* Release */,
-				7F9A292BE5164D4CB91759B0 /* MinSizeRel */,
-				3401222653254C9385FB7166 /* RelWithDebInfo */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
-		};
-		9D61EBDA9E2B45579DE5D3B9 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B08BA74560E34726AC0932C4 /* Debug */,
-				AD0E8F55F3E442E18CE40FBA /* Release */,
-				0717151D1C4145238E1732D1 /* MinSizeRel */,
-				A631CA438A8B4C1CA00DFB4D /* RelWithDebInfo */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
-		};
-		D4C28DD9A8DF40FC98EAC08C /* Build configuration list for PBXProject "msgpack-filter" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3EC3435333014B22A899BF62 /* Debug */,
-				4499966D0C4346F99EAE882F /* Release */,
-				6A3266B17CF14EAAAA2DBC55 /* MinSizeRel */,
-				1E0669DB9CAC41B08CF14B57 /* RelWithDebInfo */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
-		};
+              A34030991AD64977A24A48CC /* Build configuration list for PBXProject  "msgpack-filter" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            1C6E0CB216F14DE5A37CEE02 /* Debug */,
+                            1F3BF01592B2456DB4B208B4 /* Release */,
+                            4FE24B1D159A4A448DA20187 /* MinSizeRel */,
+                            27E02CB4283F436C87B4C7FB /* RelWithDebInfo */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              4B333B43723D4FC29B6A5FE8 /* Build configuration list for PBXNativeTarget "main" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            376D3B45E44E4D0B98C2636A /* Debug */,
+                            DB35803481A4413A8B1E6727 /* Release */,
+                            0BFFE2FF5130487AAB5880D1 /* MinSizeRel */,
+                            FBF7AB3342C94626B65ADC71 /* RelWithDebInfo */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              D405AF979FEE4951B903E83D /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            F54BF4DACF5B4625ADF9E66B /* Debug */,
+                            9F97E6FFBC054AE9B6C5F334 /* Release */,
+                            0A96B81AD7774B9D8A893E5F /* MinSizeRel */,
+                            EF96250D66514490B9DAADA0 /* RelWithDebInfo */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              3B763FA013CB4FB39BF8404A /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            88D7AE596BA449C3B7C685C7 /* Debug */,
+                            56F4C1220F2046AA8BFD4355 /* Release */,
+                            9385D63A77A14A829E100F48 /* MinSizeRel */,
+                            CC0EFB69555E4B44BD89377A /* RelWithDebInfo */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
 /* End XCConfigurationList section */
-	};
-	rootObject = A561AEAB6C044E998102CEFC /* Project object */;
+       };
+       rootObject = C2FE9CF7CABB4F71973B285A;
 }
